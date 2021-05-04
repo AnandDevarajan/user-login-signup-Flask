@@ -31,7 +31,7 @@ def login():
         rows = rows.fetchall()
         print(rows)
         if(len(rows) == 1):
-            # Here remove check.html put the first page user sees after logged
+            # Here instead of check.html put the first page user sees after logged in
             return render_template('check.html')
         else:
             return redirect('/register')
